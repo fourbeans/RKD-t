@@ -1,0 +1,17 @@
+# Historical reproduction stack for RKD-t on Linux x86_64.
+# Use Python 3.7 and a CUDA 11.6-compatible NVIDIA driver/runtime.
+# Install in an isolated environment with python -m pip install -r requirements.txt.
+# Use only the CUDA 11.6 CuPy package listed below.
+--extra-index-url https://download.pytorch.org/whl/cu116
+torch==1.12.1+cu116
+torchvision==0.13.1+cu116
+spikingjelly==0.0.0.0.14
+cupy-cuda116==10.6.0
+numpy==1.21.6
+scipy==1.7.3
+pandas==1.1.5
+matplotlib==3.5.3
+Pillow==9.5.0
+einops==0.6.1
+tensorboard==2.11.2
+tqdm==4.66.1
